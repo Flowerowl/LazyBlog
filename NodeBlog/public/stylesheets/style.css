@@ -1,0 +1,89 @@
+body {
+  font-family: "微软雅黑","Helvetica Neue", "Lucida Grande", "Arial";
+  font-size: 13px;
+  text-align: center;
+  color: #ccc;
+  background-color: #000;
+  background-image:url("/images/bg2.gif");
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-position:left top;
+}
+a {
+  color: #ff4040;
+}
+h1,
+h2 {
+  margin-top:20px;
+  font-size: 20px;
+  color: #ff4040;
+}
+h3{
+	color:#ff4040;
+}
+h1 {
+  text-shadow: 1px 2px 2px #ff4040;
+  font-size: 30px;
+}
+#content{
+	margin-top:30px;
+	width:600px;
+	margin:0 auto;
+}
+#content h2{
+	margin-top:20px;
+}
+#articles {
+  text-align: left;
+  margin:0 auto;
+  margin-top:30px;
+  width: 600px;
+}
+#articles .article {
+  margin: 20px;
+}
+#articles .article .created_at {
+  display: none;
+}
+#articles .article .title {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+.title{
+
+	padding-top:10px;
+}
+.body{
+	padding:10px;
+	border-bottom:1px dotted #ccc;
+}
+.comment{
+	margin-top:10px;
+}
+.article .created_at {
+  font-size:11px;
+  margin:10px 0;
+}
+.article input[type =text] {
+  width: 400px;
+  margin-left: 16px;
+}
+.article input[type =button],
+.article input[type =submit] {
+  text-align: left;
+  margin:0 auto;
+}
+.article textarea {
+  width: 400px;
+  height: 90px;
+}
+#newtitle input,#newbody textarea{
+	width:600px;
+}
+.person{
+	float:left;
+	text-align:left;
+	width:600px;
+	color:#53bfd2;
+}

@@ -1,0 +1,23 @@
+h1= "Lazynight"
+div#content
+  h2= title
+  div.article
+      div.created_at= article.created_at
+      div.body= article.body
+      h3="Comments"
+      - each comment in article.comments
+        div.comment
+          div.person= comment.person
+          div.commentcontent= comment.comment
+      div#commentarea
+        h3="Leave Comments"
+        form( method="post", action="/blog/addComment")
+          input( type="hidden", name="_id", value=article._id.toHexString())
+          div
+            span.comermeta Author :
+            input( type="text", name="person", id="addCommentPerson")
+          div
+            span.comermeta Comment :
+            textarea( name="comment", rows=5, id="addCommentComment")
+          div#editArticleSubmit
+            input(type="submit", value="Send")
